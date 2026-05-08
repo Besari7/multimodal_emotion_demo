@@ -1,0 +1,28 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+multimodal_emotion_stub_backup/
+
+# Data and artifacts
+/data/raw/
+/data/features/
+/data/processed/**/*.jsonl
+/data/processed/**/*.json
+/artifacts/runs/
+/artifacts/evals/
+/artifacts/**/*.pt
+/artifacts/**/*.pth
+/artifacts/**/*.ckpt
+/artifacts/**/*.bin
+
+# Media and arrays
+*.tar.gz
+*.zip
+*.mp4
+*.wav
+*.npy
+
+.env
+.DS_Store

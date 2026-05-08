@@ -1,0 +1,28 @@
+taxonomy: meld_7
+class_order:
+  - neutral
+  - surprise
+  - fear
+  - sadness
+  - joy
+  - disgust
+  - anger
+class_to_id:
+  neutral: 0
+  surprise: 1
+  fear: 2
+  sadness: 3
+  joy: 4
+  disgust: 5
+  anger: 6
+
+label_mapping_iemocap_to_meld:
+  happy: joy
+  excited: joy
+  sad: sadness
+  angry: anger
+  frustrated: anger
+  neutral: neutral
+  disgust: disgust
+  fear: fear
+  surprised: surprise

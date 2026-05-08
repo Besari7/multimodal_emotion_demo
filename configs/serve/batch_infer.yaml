@@ -1,0 +1,14 @@
+inference:
+  transcript_regime: asr
+  window_length_sec: 5.0
+  overlap: 0.5
+  low_conf_asr_threshold: 0.6
+
+fallback:
+  one_missing_modality: zero_embedding_plus_flag
+  two_missing_modalities: use_available_unimodal
+  all_missing_modalities: uniform_probs
+
+outputs:
+  timeline_path: experiments/reports/timeline_output.json
+  distribution_path: experiments/reports/distribution_output.json

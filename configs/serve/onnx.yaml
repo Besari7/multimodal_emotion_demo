@@ -1,0 +1,13 @@
+opset_version: 17
+providers:
+  - CUDAExecutionProvider
+  - CPUExecutionProvider
+
+dynamic_axes:
+  batch: true
+
+artifacts:
+  audio: experiments/artifacts/onnx/audio_branch.onnx
+  video: experiments/artifacts/onnx/video_branch.onnx
+  text: experiments/artifacts/onnx/text_branch.onnx
+  fusion: experiments/artifacts/onnx/fusion_mlp.onnx

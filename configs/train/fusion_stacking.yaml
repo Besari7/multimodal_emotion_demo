@@ -1,0 +1,19 @@
+mode: stacking
+
+meta_learner:
+  name: logistic_regression
+  solver: lbfgs
+  multi_class: multinomial
+  C: 1.0
+  class_weight: balanced
+  max_iter: 2000
+
+protocol:
+  outer_folds: 5
+  inner_folds: 4
+  use_oof_predictions: true
+  prevent_leakage: true
+
+trigger_condition:
+  max_macro_f1_gain_vs_best_unimodal: 1.0
+  min_pairwise_error_disagreement_pct: 15.0

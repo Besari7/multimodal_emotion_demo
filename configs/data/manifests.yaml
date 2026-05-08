@@ -1,0 +1,62 @@
+paths:
+  raw_root: data/raw
+  interim_root: data/interim
+  processed_root: data/processed
+
+schema:
+  utterance_manifest_columns:
+    - record_id
+    - dataset
+    - dialogue_id
+    - session_id
+    - speaker_id
+    - utterance_id
+    - utterance_index
+    - video_path
+    - audio_path_16khz
+    - start_time_sec
+    - end_time_sec
+    - duration_sec
+    - raw_label
+    - label_7
+    - label_id
+    - transcript_source
+    - transcript_text
+    - transcript_prev_1
+    - transcript_prev_2
+    - asr_conf_mean
+    - asr_conf_min
+    - asr_low_conf_flag
+    - whisper_language
+    - non_english_flag
+    - face_det_conf_mean
+    - face_det_conf_min
+    - group_id
+    - fold_id
+    - split
+  window_manifest_columns:
+    - window_id
+    - record_id
+    - dataset
+    - regime
+    - window_index
+    - window_start_sec
+    - window_end_sec
+    - effective_duration_sec
+    - is_padded
+    - pad_right_sec
+    - audio_chunk_path
+    - frame_paths
+    - text_current
+    - text_ctx_prev_1
+    - text_ctx_prev_2
+    - asr_conf_mean
+    - face_det_conf_mean
+    - missing_audio
+    - missing_video
+    - missing_text
+    - label_id
+    - label_7
+    - group_id
+    - fold_id
+    - split

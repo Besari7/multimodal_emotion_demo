@@ -1,0 +1,26 @@
+mode: late
+
+model:
+  input_dim: 773
+  hidden_dims: [512, 256]
+  dropouts: [0.30, 0.20]
+  activation: gelu
+  num_classes: 7
+
+features:
+  include_audio_embedding: true
+  include_video_embedding: true
+  include_text_embedding: true
+  include_asr_conf_mean: true
+  include_face_det_conf_mean: true
+  include_missing_flags: true
+
+train:
+  optimizer: adamw
+  lr: 1e-3
+  weight_decay: 0.01
+  batch_size: 256
+  max_epochs: 40
+  early_stopping_patience: 7
+  gradient_clip_norm: 1.0
+  label_smoothing: 0.05

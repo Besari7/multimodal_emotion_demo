@@ -1,0 +1,16 @@
+primary_metric: macro_f1
+secondary_metrics:
+  - weighted_f1
+  - per_class_precision
+  - per_class_recall
+  - confusion_matrix
+  - brier_score
+
+class_order:
+  - neutral
+  - surprise
+  - fear
+  - sadness
+  - joy
+  - disgust
+  - anger

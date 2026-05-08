@@ -1,0 +1,26 @@
+model:
+  checkpoint: efficientnet_b2
+  pretrained_weights: IMAGENET1K_V1
+  output_embedding_dim: 256
+  temporal_pooling: attentive
+
+train:
+  optimizer: adamw
+  head_lr: 1e-3
+  partial_backbone_lr: 1e-4
+  full_backbone_lr: 5e-5
+  batch_size: 24
+  max_epochs: 35
+  early_stopping_patience: 6
+  weight_decay: 0.01
+  label_smoothing: 0.05
+  scheduler: cosine_with_warmup
+  warmup_ratio: 0.1
+
+freeze_schedule:
+  - epochs: [1, 4]
+    freeze: backbone_all
+  - epochs: [5, 10]
+    unfreeze: top_two_stages
+  - epochs: [11, 35]
+    unfreeze: all

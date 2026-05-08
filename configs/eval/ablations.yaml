@@ -1,0 +1,16 @@
+required_experiments:
+  - A01_audio_only
+  - A02_video_only
+  - A03_text_only_oracle
+  - A04_text_only_asr
+  - A05_fusion_all_oracle
+  - A06_fusion_all_asr
+  - A07_drop_audio
+  - A08_drop_video
+  - A09_drop_text
+  - A10_audio_video
+  - A11_audio_text
+  - A12_video_text
+  - A13_oracle_vs_asr_gap
+  - A14_whisper_hallucination_impact
+  - A15_cmu_mosei_generalization

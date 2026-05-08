@@ -1,0 +1,14 @@
+window:
+  length_sec: 5.0
+  overlap: 0.5
+  stride_sec: 2.5
+  pad_partial_windows: true
+  padding_side: right
+
+video:
+  fps: 3
+  face_crop_size: 224
+
+audio:
+  sample_rate: 16000
+  mono: true
