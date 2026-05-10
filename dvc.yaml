@@ -1,0 +1,28 @@
+stages:
+  prepare_oracle:
+    cmd: python -m src.cli.prepare_data --regime oracle
+    deps:
+      - src/data/build_manifests.py
+      - src/data/build_splits.py
+      - src/data/windowing.py
+    outs:
+      - data/processed/oracle/utterance_manifest.parquet
+      - data/processed/oracle/window_manifest.parquet
+
+  prepare_asr:
+    cmd: python -m src.cli.prepare_data --regime asr
+    deps:
+      - src/asr/whisper_transcribe.py
+      - src/data/build_manifests.py
+      - src/data/windowing.py
+    outs:
+      - data/processed/asr/utterance_manifest.parquet
+      - data/processed/asr/window_manifest.parquet
+
+  evaluate:
+    cmd: python -m src.cli.evaluate --suite full --regime asr
+    deps:
+      - src/eval/metrics.py
+      - src/eval/run_ablation_suite.py
+    outs:
+      - experiments/reports/cv_summary.csv

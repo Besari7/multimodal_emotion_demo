@@ -1,0 +1,7 @@
+{
+  "weighted": 0.15,
+  "context2": 0.25,
+  "context1_norm": 0.05,
+  "bert_textnorm": 0.05,
+  "roberta_textnorm": 0.5
+}

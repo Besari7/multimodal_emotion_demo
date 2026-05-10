@@ -1,0 +1,26 @@
+seed: 42
+num_folds: 5
+window:
+  length_sec: 5.0
+  overlap: 0.5
+
+labels:
+  classes: [neutral, surprise, fear, sadness, joy, disgust, anger]
+
+audio:
+  checkpoint: facebook/wav2vec2-base
+  embedding_dim: 256
+
+video:
+  checkpoint: efficientnet_b2
+  fps: 3
+  embedding_dim: 256
+
+text:
+  asr_checkpoint: openai/whisper-large-v3
+  nlp_checkpoint: bert-base-uncased
+  embedding_dim: 256
+
+fusion:
+  hidden_dims: [512, 256]
+  dropout: [0.3, 0.2]

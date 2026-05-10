@@ -1,0 +1,2286 @@
+{
+  "macro_first": {
+    "weights": {
+      "weighted": 0.15,
+      "context2": 0.25,
+      "context1_norm": 0.05,
+      "bert_textnorm": 0.05,
+      "roberta_textnorm": 0.5
+    },
+    "val_metrics": {
+      "accuracy": 0.6137184115523465,
+      "neutral_precision": 0.7822014051522248,
+      "neutral_recall": 0.7121535181236673,
+      "neutral_f1": 0.7455357142857143,
+      "neutral_support": 469,
+      "joy_precision": 0.517948717948718,
+      "joy_recall": 0.6196319018404908,
+      "joy_f1": 0.5642458100558659,
+      "joy_support": 163,
+      "sadness_precision": 0.494949494949495,
+      "sadness_recall": 0.44144144144144143,
+      "sadness_f1": 0.4666666666666667,
+      "sadness_support": 111,
+      "anger_precision": 0.5118110236220472,
+      "anger_recall": 0.42483660130718953,
+      "anger_f1": 0.4642857142857142,
+      "anger_support": 153,
+      "fear_precision": 0.3076923076923077,
+      "fear_recall": 0.4,
+      "fear_f1": 0.34782608695652173,
+      "fear_support": 40,
+      "disgust_precision": 0.5,
+      "disgust_recall": 0.36363636363636365,
+      "disgust_f1": 0.4210526315789474,
+      "disgust_support": 22,
+      "surprise_precision": 0.5572916666666666,
+      "surprise_recall": 0.7133333333333334,
+      "surprise_f1": 0.6257309941520468,
+      "surprise_support": 150,
+      "macro_f1": 0.5193348025687824,
+      "weighted_f1": 0.6150720955059794,
+      "confusion_matrix": [
+        {
+          "actual": "neutral",
+          "predicted": "neutral",
+          "count": 334
+        },
+        {
+          "actual": "neutral",
+          "predicted": "joy",
+          "count": 35
+        },
+        {
+          "actual": "neutral",
+          "predicted": "sadness",
+          "count": 26
+        },
+        {
+          "actual": "neutral",
+          "predicted": "anger",
+          "count": 18
+        },
+        {
+          "actual": "neutral",
+          "predicted": "fear",
+          "count": 13
+        },
+        {
+          "actual": "neutral",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "neutral",
+          "predicted": "surprise",
+          "count": 41
+        },
+        {
+          "actual": "joy",
+          "predicted": "neutral",
+          "count": 29
+        },
+        {
+          "actual": "joy",
+          "predicted": "joy",
+          "count": 101
+        },
+        {
+          "actual": "joy",
+          "predicted": "sadness",
+          "count": 5
+        },
+        {
+          "actual": "joy",
+          "predicted": "anger",
+          "count": 12
+        },
+        {
+          "actual": "joy",
+          "predicted": "fear",
+          "count": 3
+        },
+        {
+          "actual": "joy",
+          "predicted": "disgust",
+          "count": 0
+        },
+        {
+          "actual": "joy",
+          "predicted": "surprise",
+          "count": 13
+        },
+        {
+          "actual": "sadness",
+          "predicted": "neutral",
+          "count": 23
+        },
+        {
+          "actual": "sadness",
+          "predicted": "joy",
+          "count": 11
+        },
+        {
+          "actual": "sadness",
+          "predicted": "sadness",
+          "count": 49
+        },
+        {
+          "actual": "sadness",
+          "predicted": "anger",
+          "count": 9
+        },
+        {
+          "actual": "sadness",
+          "predicted": "fear",
+          "count": 12
+        },
+        {
+          "actual": "sadness",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "sadness",
+          "predicted": "surprise",
+          "count": 5
+        },
+        {
+          "actual": "anger",
+          "predicted": "neutral",
+          "count": 29
+        },
+        {
+          "actual": "anger",
+          "predicted": "joy",
+          "count": 29
+        },
+        {
+          "actual": "anger",
+          "predicted": "sadness",
+          "count": 6
+        },
+        {
+          "actual": "anger",
+          "predicted": "anger",
+          "count": 65
+        },
+        {
+          "actual": "anger",
+          "predicted": "fear",
+          "count": 3
+        },
+        {
+          "actual": "anger",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "anger",
+          "predicted": "surprise",
+          "count": 19
+        },
+        {
+          "actual": "fear",
+          "predicted": "neutral",
+          "count": 1
+        },
+        {
+          "actual": "fear",
+          "predicted": "joy",
+          "count": 4
+        },
+        {
+          "actual": "fear",
+          "predicted": "sadness",
+          "count": 4
+        },
+        {
+          "actual": "fear",
+          "predicted": "anger",
+          "count": 9
+        },
+        {
+          "actual": "fear",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "fear",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "fear",
+          "predicted": "surprise",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "neutral",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "joy",
+          "count": 0
+        },
+        {
+          "actual": "disgust",
+          "predicted": "sadness",
+          "count": 3
+        },
+        {
+          "actual": "disgust",
+          "predicted": "anger",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "fear",
+          "count": 0
+        },
+        {
+          "actual": "disgust",
+          "predicted": "disgust",
+          "count": 8
+        },
+        {
+          "actual": "disgust",
+          "predicted": "surprise",
+          "count": 3
+        },
+        {
+          "actual": "surprise",
+          "predicted": "neutral",
+          "count": 7
+        },
+        {
+          "actual": "surprise",
+          "predicted": "joy",
+          "count": 15
+        },
+        {
+          "actual": "surprise",
+          "predicted": "sadness",
+          "count": 6
+        },
+        {
+          "actual": "surprise",
+          "predicted": "anger",
+          "count": 10
+        },
+        {
+          "actual": "surprise",
+          "predicted": "fear",
+          "count": 5
+        },
+        {
+          "actual": "surprise",
+          "predicted": "disgust",
+          "count": 0
+        },
+        {
+          "actual": "surprise",
+          "predicted": "surprise",
+          "count": 107
+        }
+      ],
+      "num_samples": 1108
+    },
+    "test_metrics": {
+      "accuracy": 0.6084291187739463,
+      "neutral_precision": 0.8122109158186864,
+      "neutral_recall": 0.6990445859872612,
+      "neutral_f1": 0.7513906718014548,
+      "neutral_support": 1256,
+      "joy_precision": 0.5417515274949084,
+      "joy_recall": 0.6616915422885572,
+      "joy_f1": 0.5957446808510638,
+      "joy_support": 402,
+      "sadness_precision": 0.3438914027149321,
+      "sadness_recall": 0.36538461538461536,
+      "sadness_f1": 0.3543123543123543,
+      "sadness_support": 208,
+      "anger_precision": 0.4981949458483754,
+      "anger_recall": 0.4,
+      "anger_f1": 0.4437299035369775,
+      "anger_support": 345,
+      "fear_precision": 0.1797752808988764,
+      "fear_recall": 0.32,
+      "fear_f1": 0.2302158273381295,
+      "fear_support": 50,
+      "disgust_precision": 0.32608695652173914,
+      "disgust_recall": 0.22058823529411764,
+      "disgust_f1": 0.2631578947368421,
+      "disgust_support": 68,
+      "surprise_precision": 0.49135802469135803,
+      "surprise_recall": 0.708185053380783,
+      "surprise_f1": 0.5801749271137027,
+      "surprise_support": 281,
+      "macro_f1": 0.4598180370986464,
+      "weighted_f1": 0.6139672469846529,
+      "confusion_matrix": [
+        {
+          "actual": "neutral",
+          "predicted": "neutral",
+          "count": 878
+        },
+        {
+          "actual": "neutral",
+          "predicted": "joy",
+          "count": 102
+        },
+        {
+          "actual": "neutral",
+          "predicted": "sadness",
+          "count": 89
+        },
+        {
+          "actual": "neutral",
+          "predicted": "anger",
+          "count": 54
+        },
+        {
+          "actual": "neutral",
+          "predicted": "fear",
+          "count": 31
+        },
+        {
+          "actual": "neutral",
+          "predicted": "disgust",
+          "count": 13
+        },
+        {
+          "actual": "neutral",
+          "predicted": "surprise",
+          "count": 89
+        },
+        {
+          "actual": "joy",
+          "predicted": "neutral",
+          "count": 62
+        },
+        {
+          "actual": "joy",
+          "predicted": "joy",
+          "count": 266
+        },
+        {
+          "actual": "joy",
+          "predicted": "sadness",
+          "count": 10
+        },
+        {
+          "actual": "joy",
+          "predicted": "anger",
+          "count": 28
+        },
+        {
+          "actual": "joy",
+          "predicted": "fear",
+          "count": 6
+        },
+        {
+          "actual": "joy",
+          "predicted": "disgust",
+          "count": 4
+        },
+        {
+          "actual": "joy",
+          "predicted": "surprise",
+          "count": 26
+        },
+        {
+          "actual": "sadness",
+          "predicted": "neutral",
+          "count": 56
+        },
+        {
+          "actual": "sadness",
+          "predicted": "joy",
+          "count": 21
+        },
+        {
+          "actual": "sadness",
+          "predicted": "sadness",
+          "count": 76
+        },
+        {
+          "actual": "sadness",
+          "predicted": "anger",
+          "count": 19
+        },
+        {
+          "actual": "sadness",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "sadness",
+          "predicted": "disgust",
+          "count": 1
+        },
+        {
+          "actual": "sadness",
+          "predicted": "surprise",
+          "count": 19
+        },
+        {
+          "actual": "anger",
+          "predicted": "neutral",
+          "count": 43
+        },
+        {
+          "actual": "anger",
+          "predicted": "joy",
+          "count": 55
+        },
+        {
+          "actual": "anger",
+          "predicted": "sadness",
+          "count": 25
+        },
+        {
+          "actual": "anger",
+          "predicted": "anger",
+          "count": 138
+        },
+        {
+          "actual": "anger",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "anger",
+          "predicted": "disgust",
+          "count": 10
+        },
+        {
+          "actual": "anger",
+          "predicted": "surprise",
+          "count": 58
+        },
+        {
+          "actual": "fear",
+          "predicted": "neutral",
+          "count": 9
+        },
+        {
+          "actual": "fear",
+          "predicted": "joy",
+          "count": 6
+        },
+        {
+          "actual": "fear",
+          "predicted": "sadness",
+          "count": 7
+        },
+        {
+          "actual": "fear",
+          "predicted": "anger",
+          "count": 7
+        },
+        {
+          "actual": "fear",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "fear",
+          "predicted": "disgust",
+          "count": 1
+        },
+        {
+          "actual": "fear",
+          "predicted": "surprise",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "neutral",
+          "count": 18
+        },
+        {
+          "actual": "disgust",
+          "predicted": "joy",
+          "count": 7
+        },
+        {
+          "actual": "disgust",
+          "predicted": "sadness",
+          "count": 5
+        },
+        {
+          "actual": "disgust",
+          "predicted": "anger",
+          "count": 11
+        },
+        {
+          "actual": "disgust",
+          "predicted": "fear",
+          "count": 2
+        },
+        {
+          "actual": "disgust",
+          "predicted": "disgust",
+          "count": 15
+        },
+        {
+          "actual": "disgust",
+          "predicted": "surprise",
+          "count": 10
+        },
+        {
+          "actual": "surprise",
+          "predicted": "neutral",
+          "count": 15
+        },
+        {
+          "actual": "surprise",
+          "predicted": "joy",
+          "count": 34
+        },
+        {
+          "actual": "surprise",
+          "predicted": "sadness",
+          "count": 9
+        },
+        {
+          "actual": "surprise",
+          "predicted": "anger",
+          "count": 20
+        },
+        {
+          "actual": "surprise",
+          "predicted": "fear",
+          "count": 2
+        },
+        {
+          "actual": "surprise",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "surprise",
+          "predicted": "surprise",
+          "count": 199
+        }
+      ],
+      "num_samples": 2610
+    }
+  },
+  "acc_059_wf1_060": {
+    "weights": {
+      "weighted": 0.15,
+      "context2": 0.25,
+      "context1_norm": 0.05,
+      "bert_textnorm": 0.05,
+      "roberta_textnorm": 0.5
+    },
+    "val_metrics": {
+      "accuracy": 0.6137184115523465,
+      "neutral_precision": 0.7822014051522248,
+      "neutral_recall": 0.7121535181236673,
+      "neutral_f1": 0.7455357142857143,
+      "neutral_support": 469,
+      "joy_precision": 0.517948717948718,
+      "joy_recall": 0.6196319018404908,
+      "joy_f1": 0.5642458100558659,
+      "joy_support": 163,
+      "sadness_precision": 0.494949494949495,
+      "sadness_recall": 0.44144144144144143,
+      "sadness_f1": 0.4666666666666667,
+      "sadness_support": 111,
+      "anger_precision": 0.5118110236220472,
+      "anger_recall": 0.42483660130718953,
+      "anger_f1": 0.4642857142857142,
+      "anger_support": 153,
+      "fear_precision": 0.3076923076923077,
+      "fear_recall": 0.4,
+      "fear_f1": 0.34782608695652173,
+      "fear_support": 40,
+      "disgust_precision": 0.5,
+      "disgust_recall": 0.36363636363636365,
+      "disgust_f1": 0.4210526315789474,
+      "disgust_support": 22,
+      "surprise_precision": 0.5572916666666666,
+      "surprise_recall": 0.7133333333333334,
+      "surprise_f1": 0.6257309941520468,
+      "surprise_support": 150,
+      "macro_f1": 0.5193348025687824,
+      "weighted_f1": 0.6150720955059794,
+      "confusion_matrix": [
+        {
+          "actual": "neutral",
+          "predicted": "neutral",
+          "count": 334
+        },
+        {
+          "actual": "neutral",
+          "predicted": "joy",
+          "count": 35
+        },
+        {
+          "actual": "neutral",
+          "predicted": "sadness",
+          "count": 26
+        },
+        {
+          "actual": "neutral",
+          "predicted": "anger",
+          "count": 18
+        },
+        {
+          "actual": "neutral",
+          "predicted": "fear",
+          "count": 13
+        },
+        {
+          "actual": "neutral",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "neutral",
+          "predicted": "surprise",
+          "count": 41
+        },
+        {
+          "actual": "joy",
+          "predicted": "neutral",
+          "count": 29
+        },
+        {
+          "actual": "joy",
+          "predicted": "joy",
+          "count": 101
+        },
+        {
+          "actual": "joy",
+          "predicted": "sadness",
+          "count": 5
+        },
+        {
+          "actual": "joy",
+          "predicted": "anger",
+          "count": 12
+        },
+        {
+          "actual": "joy",
+          "predicted": "fear",
+          "count": 3
+        },
+        {
+          "actual": "joy",
+          "predicted": "disgust",
+          "count": 0
+        },
+        {
+          "actual": "joy",
+          "predicted": "surprise",
+          "count": 13
+        },
+        {
+          "actual": "sadness",
+          "predicted": "neutral",
+          "count": 23
+        },
+        {
+          "actual": "sadness",
+          "predicted": "joy",
+          "count": 11
+        },
+        {
+          "actual": "sadness",
+          "predicted": "sadness",
+          "count": 49
+        },
+        {
+          "actual": "sadness",
+          "predicted": "anger",
+          "count": 9
+        },
+        {
+          "actual": "sadness",
+          "predicted": "fear",
+          "count": 12
+        },
+        {
+          "actual": "sadness",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "sadness",
+          "predicted": "surprise",
+          "count": 5
+        },
+        {
+          "actual": "anger",
+          "predicted": "neutral",
+          "count": 29
+        },
+        {
+          "actual": "anger",
+          "predicted": "joy",
+          "count": 29
+        },
+        {
+          "actual": "anger",
+          "predicted": "sadness",
+          "count": 6
+        },
+        {
+          "actual": "anger",
+          "predicted": "anger",
+          "count": 65
+        },
+        {
+          "actual": "anger",
+          "predicted": "fear",
+          "count": 3
+        },
+        {
+          "actual": "anger",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "anger",
+          "predicted": "surprise",
+          "count": 19
+        },
+        {
+          "actual": "fear",
+          "predicted": "neutral",
+          "count": 1
+        },
+        {
+          "actual": "fear",
+          "predicted": "joy",
+          "count": 4
+        },
+        {
+          "actual": "fear",
+          "predicted": "sadness",
+          "count": 4
+        },
+        {
+          "actual": "fear",
+          "predicted": "anger",
+          "count": 9
+        },
+        {
+          "actual": "fear",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "fear",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "fear",
+          "predicted": "surprise",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "neutral",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "joy",
+          "count": 0
+        },
+        {
+          "actual": "disgust",
+          "predicted": "sadness",
+          "count": 3
+        },
+        {
+          "actual": "disgust",
+          "predicted": "anger",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "fear",
+          "count": 0
+        },
+        {
+          "actual": "disgust",
+          "predicted": "disgust",
+          "count": 8
+        },
+        {
+          "actual": "disgust",
+          "predicted": "surprise",
+          "count": 3
+        },
+        {
+          "actual": "surprise",
+          "predicted": "neutral",
+          "count": 7
+        },
+        {
+          "actual": "surprise",
+          "predicted": "joy",
+          "count": 15
+        },
+        {
+          "actual": "surprise",
+          "predicted": "sadness",
+          "count": 6
+        },
+        {
+          "actual": "surprise",
+          "predicted": "anger",
+          "count": 10
+        },
+        {
+          "actual": "surprise",
+          "predicted": "fear",
+          "count": 5
+        },
+        {
+          "actual": "surprise",
+          "predicted": "disgust",
+          "count": 0
+        },
+        {
+          "actual": "surprise",
+          "predicted": "surprise",
+          "count": 107
+        }
+      ],
+      "num_samples": 1108
+    },
+    "test_metrics": {
+      "accuracy": 0.6084291187739463,
+      "neutral_precision": 0.8122109158186864,
+      "neutral_recall": 0.6990445859872612,
+      "neutral_f1": 0.7513906718014548,
+      "neutral_support": 1256,
+      "joy_precision": 0.5417515274949084,
+      "joy_recall": 0.6616915422885572,
+      "joy_f1": 0.5957446808510638,
+      "joy_support": 402,
+      "sadness_precision": 0.3438914027149321,
+      "sadness_recall": 0.36538461538461536,
+      "sadness_f1": 0.3543123543123543,
+      "sadness_support": 208,
+      "anger_precision": 0.4981949458483754,
+      "anger_recall": 0.4,
+      "anger_f1": 0.4437299035369775,
+      "anger_support": 345,
+      "fear_precision": 0.1797752808988764,
+      "fear_recall": 0.32,
+      "fear_f1": 0.2302158273381295,
+      "fear_support": 50,
+      "disgust_precision": 0.32608695652173914,
+      "disgust_recall": 0.22058823529411764,
+      "disgust_f1": 0.2631578947368421,
+      "disgust_support": 68,
+      "surprise_precision": 0.49135802469135803,
+      "surprise_recall": 0.708185053380783,
+      "surprise_f1": 0.5801749271137027,
+      "surprise_support": 281,
+      "macro_f1": 0.4598180370986464,
+      "weighted_f1": 0.6139672469846529,
+      "confusion_matrix": [
+        {
+          "actual": "neutral",
+          "predicted": "neutral",
+          "count": 878
+        },
+        {
+          "actual": "neutral",
+          "predicted": "joy",
+          "count": 102
+        },
+        {
+          "actual": "neutral",
+          "predicted": "sadness",
+          "count": 89
+        },
+        {
+          "actual": "neutral",
+          "predicted": "anger",
+          "count": 54
+        },
+        {
+          "actual": "neutral",
+          "predicted": "fear",
+          "count": 31
+        },
+        {
+          "actual": "neutral",
+          "predicted": "disgust",
+          "count": 13
+        },
+        {
+          "actual": "neutral",
+          "predicted": "surprise",
+          "count": 89
+        },
+        {
+          "actual": "joy",
+          "predicted": "neutral",
+          "count": 62
+        },
+        {
+          "actual": "joy",
+          "predicted": "joy",
+          "count": 266
+        },
+        {
+          "actual": "joy",
+          "predicted": "sadness",
+          "count": 10
+        },
+        {
+          "actual": "joy",
+          "predicted": "anger",
+          "count": 28
+        },
+        {
+          "actual": "joy",
+          "predicted": "fear",
+          "count": 6
+        },
+        {
+          "actual": "joy",
+          "predicted": "disgust",
+          "count": 4
+        },
+        {
+          "actual": "joy",
+          "predicted": "surprise",
+          "count": 26
+        },
+        {
+          "actual": "sadness",
+          "predicted": "neutral",
+          "count": 56
+        },
+        {
+          "actual": "sadness",
+          "predicted": "joy",
+          "count": 21
+        },
+        {
+          "actual": "sadness",
+          "predicted": "sadness",
+          "count": 76
+        },
+        {
+          "actual": "sadness",
+          "predicted": "anger",
+          "count": 19
+        },
+        {
+          "actual": "sadness",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "sadness",
+          "predicted": "disgust",
+          "count": 1
+        },
+        {
+          "actual": "sadness",
+          "predicted": "surprise",
+          "count": 19
+        },
+        {
+          "actual": "anger",
+          "predicted": "neutral",
+          "count": 43
+        },
+        {
+          "actual": "anger",
+          "predicted": "joy",
+          "count": 55
+        },
+        {
+          "actual": "anger",
+          "predicted": "sadness",
+          "count": 25
+        },
+        {
+          "actual": "anger",
+          "predicted": "anger",
+          "count": 138
+        },
+        {
+          "actual": "anger",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "anger",
+          "predicted": "disgust",
+          "count": 10
+        },
+        {
+          "actual": "anger",
+          "predicted": "surprise",
+          "count": 58
+        },
+        {
+          "actual": "fear",
+          "predicted": "neutral",
+          "count": 9
+        },
+        {
+          "actual": "fear",
+          "predicted": "joy",
+          "count": 6
+        },
+        {
+          "actual": "fear",
+          "predicted": "sadness",
+          "count": 7
+        },
+        {
+          "actual": "fear",
+          "predicted": "anger",
+          "count": 7
+        },
+        {
+          "actual": "fear",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "fear",
+          "predicted": "disgust",
+          "count": 1
+        },
+        {
+          "actual": "fear",
+          "predicted": "surprise",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "neutral",
+          "count": 18
+        },
+        {
+          "actual": "disgust",
+          "predicted": "joy",
+          "count": 7
+        },
+        {
+          "actual": "disgust",
+          "predicted": "sadness",
+          "count": 5
+        },
+        {
+          "actual": "disgust",
+          "predicted": "anger",
+          "count": 11
+        },
+        {
+          "actual": "disgust",
+          "predicted": "fear",
+          "count": 2
+        },
+        {
+          "actual": "disgust",
+          "predicted": "disgust",
+          "count": 15
+        },
+        {
+          "actual": "disgust",
+          "predicted": "surprise",
+          "count": 10
+        },
+        {
+          "actual": "surprise",
+          "predicted": "neutral",
+          "count": 15
+        },
+        {
+          "actual": "surprise",
+          "predicted": "joy",
+          "count": 34
+        },
+        {
+          "actual": "surprise",
+          "predicted": "sadness",
+          "count": 9
+        },
+        {
+          "actual": "surprise",
+          "predicted": "anger",
+          "count": 20
+        },
+        {
+          "actual": "surprise",
+          "predicted": "fear",
+          "count": 2
+        },
+        {
+          "actual": "surprise",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "surprise",
+          "predicted": "surprise",
+          "count": 199
+        }
+      ],
+      "num_samples": 2610
+    }
+  },
+  "acc_060_wf1_060": {
+    "weights": {
+      "weighted": 0.15,
+      "context2": 0.25,
+      "context1_norm": 0.05,
+      "bert_textnorm": 0.05,
+      "roberta_textnorm": 0.5
+    },
+    "val_metrics": {
+      "accuracy": 0.6137184115523465,
+      "neutral_precision": 0.7822014051522248,
+      "neutral_recall": 0.7121535181236673,
+      "neutral_f1": 0.7455357142857143,
+      "neutral_support": 469,
+      "joy_precision": 0.517948717948718,
+      "joy_recall": 0.6196319018404908,
+      "joy_f1": 0.5642458100558659,
+      "joy_support": 163,
+      "sadness_precision": 0.494949494949495,
+      "sadness_recall": 0.44144144144144143,
+      "sadness_f1": 0.4666666666666667,
+      "sadness_support": 111,
+      "anger_precision": 0.5118110236220472,
+      "anger_recall": 0.42483660130718953,
+      "anger_f1": 0.4642857142857142,
+      "anger_support": 153,
+      "fear_precision": 0.3076923076923077,
+      "fear_recall": 0.4,
+      "fear_f1": 0.34782608695652173,
+      "fear_support": 40,
+      "disgust_precision": 0.5,
+      "disgust_recall": 0.36363636363636365,
+      "disgust_f1": 0.4210526315789474,
+      "disgust_support": 22,
+      "surprise_precision": 0.5572916666666666,
+      "surprise_recall": 0.7133333333333334,
+      "surprise_f1": 0.6257309941520468,
+      "surprise_support": 150,
+      "macro_f1": 0.5193348025687824,
+      "weighted_f1": 0.6150720955059794,
+      "confusion_matrix": [
+        {
+          "actual": "neutral",
+          "predicted": "neutral",
+          "count": 334
+        },
+        {
+          "actual": "neutral",
+          "predicted": "joy",
+          "count": 35
+        },
+        {
+          "actual": "neutral",
+          "predicted": "sadness",
+          "count": 26
+        },
+        {
+          "actual": "neutral",
+          "predicted": "anger",
+          "count": 18
+        },
+        {
+          "actual": "neutral",
+          "predicted": "fear",
+          "count": 13
+        },
+        {
+          "actual": "neutral",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "neutral",
+          "predicted": "surprise",
+          "count": 41
+        },
+        {
+          "actual": "joy",
+          "predicted": "neutral",
+          "count": 29
+        },
+        {
+          "actual": "joy",
+          "predicted": "joy",
+          "count": 101
+        },
+        {
+          "actual": "joy",
+          "predicted": "sadness",
+          "count": 5
+        },
+        {
+          "actual": "joy",
+          "predicted": "anger",
+          "count": 12
+        },
+        {
+          "actual": "joy",
+          "predicted": "fear",
+          "count": 3
+        },
+        {
+          "actual": "joy",
+          "predicted": "disgust",
+          "count": 0
+        },
+        {
+          "actual": "joy",
+          "predicted": "surprise",
+          "count": 13
+        },
+        {
+          "actual": "sadness",
+          "predicted": "neutral",
+          "count": 23
+        },
+        {
+          "actual": "sadness",
+          "predicted": "joy",
+          "count": 11
+        },
+        {
+          "actual": "sadness",
+          "predicted": "sadness",
+          "count": 49
+        },
+        {
+          "actual": "sadness",
+          "predicted": "anger",
+          "count": 9
+        },
+        {
+          "actual": "sadness",
+          "predicted": "fear",
+          "count": 12
+        },
+        {
+          "actual": "sadness",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "sadness",
+          "predicted": "surprise",
+          "count": 5
+        },
+        {
+          "actual": "anger",
+          "predicted": "neutral",
+          "count": 29
+        },
+        {
+          "actual": "anger",
+          "predicted": "joy",
+          "count": 29
+        },
+        {
+          "actual": "anger",
+          "predicted": "sadness",
+          "count": 6
+        },
+        {
+          "actual": "anger",
+          "predicted": "anger",
+          "count": 65
+        },
+        {
+          "actual": "anger",
+          "predicted": "fear",
+          "count": 3
+        },
+        {
+          "actual": "anger",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "anger",
+          "predicted": "surprise",
+          "count": 19
+        },
+        {
+          "actual": "fear",
+          "predicted": "neutral",
+          "count": 1
+        },
+        {
+          "actual": "fear",
+          "predicted": "joy",
+          "count": 4
+        },
+        {
+          "actual": "fear",
+          "predicted": "sadness",
+          "count": 4
+        },
+        {
+          "actual": "fear",
+          "predicted": "anger",
+          "count": 9
+        },
+        {
+          "actual": "fear",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "fear",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "fear",
+          "predicted": "surprise",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "neutral",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "joy",
+          "count": 0
+        },
+        {
+          "actual": "disgust",
+          "predicted": "sadness",
+          "count": 3
+        },
+        {
+          "actual": "disgust",
+          "predicted": "anger",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "fear",
+          "count": 0
+        },
+        {
+          "actual": "disgust",
+          "predicted": "disgust",
+          "count": 8
+        },
+        {
+          "actual": "disgust",
+          "predicted": "surprise",
+          "count": 3
+        },
+        {
+          "actual": "surprise",
+          "predicted": "neutral",
+          "count": 7
+        },
+        {
+          "actual": "surprise",
+          "predicted": "joy",
+          "count": 15
+        },
+        {
+          "actual": "surprise",
+          "predicted": "sadness",
+          "count": 6
+        },
+        {
+          "actual": "surprise",
+          "predicted": "anger",
+          "count": 10
+        },
+        {
+          "actual": "surprise",
+          "predicted": "fear",
+          "count": 5
+        },
+        {
+          "actual": "surprise",
+          "predicted": "disgust",
+          "count": 0
+        },
+        {
+          "actual": "surprise",
+          "predicted": "surprise",
+          "count": 107
+        }
+      ],
+      "num_samples": 1108
+    },
+    "test_metrics": {
+      "accuracy": 0.6084291187739463,
+      "neutral_precision": 0.8122109158186864,
+      "neutral_recall": 0.6990445859872612,
+      "neutral_f1": 0.7513906718014548,
+      "neutral_support": 1256,
+      "joy_precision": 0.5417515274949084,
+      "joy_recall": 0.6616915422885572,
+      "joy_f1": 0.5957446808510638,
+      "joy_support": 402,
+      "sadness_precision": 0.3438914027149321,
+      "sadness_recall": 0.36538461538461536,
+      "sadness_f1": 0.3543123543123543,
+      "sadness_support": 208,
+      "anger_precision": 0.4981949458483754,
+      "anger_recall": 0.4,
+      "anger_f1": 0.4437299035369775,
+      "anger_support": 345,
+      "fear_precision": 0.1797752808988764,
+      "fear_recall": 0.32,
+      "fear_f1": 0.2302158273381295,
+      "fear_support": 50,
+      "disgust_precision": 0.32608695652173914,
+      "disgust_recall": 0.22058823529411764,
+      "disgust_f1": 0.2631578947368421,
+      "disgust_support": 68,
+      "surprise_precision": 0.49135802469135803,
+      "surprise_recall": 0.708185053380783,
+      "surprise_f1": 0.5801749271137027,
+      "surprise_support": 281,
+      "macro_f1": 0.4598180370986464,
+      "weighted_f1": 0.6139672469846529,
+      "confusion_matrix": [
+        {
+          "actual": "neutral",
+          "predicted": "neutral",
+          "count": 878
+        },
+        {
+          "actual": "neutral",
+          "predicted": "joy",
+          "count": 102
+        },
+        {
+          "actual": "neutral",
+          "predicted": "sadness",
+          "count": 89
+        },
+        {
+          "actual": "neutral",
+          "predicted": "anger",
+          "count": 54
+        },
+        {
+          "actual": "neutral",
+          "predicted": "fear",
+          "count": 31
+        },
+        {
+          "actual": "neutral",
+          "predicted": "disgust",
+          "count": 13
+        },
+        {
+          "actual": "neutral",
+          "predicted": "surprise",
+          "count": 89
+        },
+        {
+          "actual": "joy",
+          "predicted": "neutral",
+          "count": 62
+        },
+        {
+          "actual": "joy",
+          "predicted": "joy",
+          "count": 266
+        },
+        {
+          "actual": "joy",
+          "predicted": "sadness",
+          "count": 10
+        },
+        {
+          "actual": "joy",
+          "predicted": "anger",
+          "count": 28
+        },
+        {
+          "actual": "joy",
+          "predicted": "fear",
+          "count": 6
+        },
+        {
+          "actual": "joy",
+          "predicted": "disgust",
+          "count": 4
+        },
+        {
+          "actual": "joy",
+          "predicted": "surprise",
+          "count": 26
+        },
+        {
+          "actual": "sadness",
+          "predicted": "neutral",
+          "count": 56
+        },
+        {
+          "actual": "sadness",
+          "predicted": "joy",
+          "count": 21
+        },
+        {
+          "actual": "sadness",
+          "predicted": "sadness",
+          "count": 76
+        },
+        {
+          "actual": "sadness",
+          "predicted": "anger",
+          "count": 19
+        },
+        {
+          "actual": "sadness",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "sadness",
+          "predicted": "disgust",
+          "count": 1
+        },
+        {
+          "actual": "sadness",
+          "predicted": "surprise",
+          "count": 19
+        },
+        {
+          "actual": "anger",
+          "predicted": "neutral",
+          "count": 43
+        },
+        {
+          "actual": "anger",
+          "predicted": "joy",
+          "count": 55
+        },
+        {
+          "actual": "anger",
+          "predicted": "sadness",
+          "count": 25
+        },
+        {
+          "actual": "anger",
+          "predicted": "anger",
+          "count": 138
+        },
+        {
+          "actual": "anger",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "anger",
+          "predicted": "disgust",
+          "count": 10
+        },
+        {
+          "actual": "anger",
+          "predicted": "surprise",
+          "count": 58
+        },
+        {
+          "actual": "fear",
+          "predicted": "neutral",
+          "count": 9
+        },
+        {
+          "actual": "fear",
+          "predicted": "joy",
+          "count": 6
+        },
+        {
+          "actual": "fear",
+          "predicted": "sadness",
+          "count": 7
+        },
+        {
+          "actual": "fear",
+          "predicted": "anger",
+          "count": 7
+        },
+        {
+          "actual": "fear",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "fear",
+          "predicted": "disgust",
+          "count": 1
+        },
+        {
+          "actual": "fear",
+          "predicted": "surprise",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "neutral",
+          "count": 18
+        },
+        {
+          "actual": "disgust",
+          "predicted": "joy",
+          "count": 7
+        },
+        {
+          "actual": "disgust",
+          "predicted": "sadness",
+          "count": 5
+        },
+        {
+          "actual": "disgust",
+          "predicted": "anger",
+          "count": 11
+        },
+        {
+          "actual": "disgust",
+          "predicted": "fear",
+          "count": 2
+        },
+        {
+          "actual": "disgust",
+          "predicted": "disgust",
+          "count": 15
+        },
+        {
+          "actual": "disgust",
+          "predicted": "surprise",
+          "count": 10
+        },
+        {
+          "actual": "surprise",
+          "predicted": "neutral",
+          "count": 15
+        },
+        {
+          "actual": "surprise",
+          "predicted": "joy",
+          "count": 34
+        },
+        {
+          "actual": "surprise",
+          "predicted": "sadness",
+          "count": 9
+        },
+        {
+          "actual": "surprise",
+          "predicted": "anger",
+          "count": 20
+        },
+        {
+          "actual": "surprise",
+          "predicted": "fear",
+          "count": 2
+        },
+        {
+          "actual": "surprise",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "surprise",
+          "predicted": "surprise",
+          "count": 199
+        }
+      ],
+      "num_samples": 2610
+    }
+  },
+  "balanced_objective": {
+    "weights": {
+      "weighted": 0.15,
+      "context2": 0.25,
+      "context1_norm": 0.05,
+      "bert_textnorm": 0.05,
+      "roberta_textnorm": 0.5
+    },
+    "val_metrics": {
+      "accuracy": 0.6137184115523465,
+      "neutral_precision": 0.7822014051522248,
+      "neutral_recall": 0.7121535181236673,
+      "neutral_f1": 0.7455357142857143,
+      "neutral_support": 469,
+      "joy_precision": 0.517948717948718,
+      "joy_recall": 0.6196319018404908,
+      "joy_f1": 0.5642458100558659,
+      "joy_support": 163,
+      "sadness_precision": 0.494949494949495,
+      "sadness_recall": 0.44144144144144143,
+      "sadness_f1": 0.4666666666666667,
+      "sadness_support": 111,
+      "anger_precision": 0.5118110236220472,
+      "anger_recall": 0.42483660130718953,
+      "anger_f1": 0.4642857142857142,
+      "anger_support": 153,
+      "fear_precision": 0.3076923076923077,
+      "fear_recall": 0.4,
+      "fear_f1": 0.34782608695652173,
+      "fear_support": 40,
+      "disgust_precision": 0.5,
+      "disgust_recall": 0.36363636363636365,
+      "disgust_f1": 0.4210526315789474,
+      "disgust_support": 22,
+      "surprise_precision": 0.5572916666666666,
+      "surprise_recall": 0.7133333333333334,
+      "surprise_f1": 0.6257309941520468,
+      "surprise_support": 150,
+      "macro_f1": 0.5193348025687824,
+      "weighted_f1": 0.6150720955059794,
+      "confusion_matrix": [
+        {
+          "actual": "neutral",
+          "predicted": "neutral",
+          "count": 334
+        },
+        {
+          "actual": "neutral",
+          "predicted": "joy",
+          "count": 35
+        },
+        {
+          "actual": "neutral",
+          "predicted": "sadness",
+          "count": 26
+        },
+        {
+          "actual": "neutral",
+          "predicted": "anger",
+          "count": 18
+        },
+        {
+          "actual": "neutral",
+          "predicted": "fear",
+          "count": 13
+        },
+        {
+          "actual": "neutral",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "neutral",
+          "predicted": "surprise",
+          "count": 41
+        },
+        {
+          "actual": "joy",
+          "predicted": "neutral",
+          "count": 29
+        },
+        {
+          "actual": "joy",
+          "predicted": "joy",
+          "count": 101
+        },
+        {
+          "actual": "joy",
+          "predicted": "sadness",
+          "count": 5
+        },
+        {
+          "actual": "joy",
+          "predicted": "anger",
+          "count": 12
+        },
+        {
+          "actual": "joy",
+          "predicted": "fear",
+          "count": 3
+        },
+        {
+          "actual": "joy",
+          "predicted": "disgust",
+          "count": 0
+        },
+        {
+          "actual": "joy",
+          "predicted": "surprise",
+          "count": 13
+        },
+        {
+          "actual": "sadness",
+          "predicted": "neutral",
+          "count": 23
+        },
+        {
+          "actual": "sadness",
+          "predicted": "joy",
+          "count": 11
+        },
+        {
+          "actual": "sadness",
+          "predicted": "sadness",
+          "count": 49
+        },
+        {
+          "actual": "sadness",
+          "predicted": "anger",
+          "count": 9
+        },
+        {
+          "actual": "sadness",
+          "predicted": "fear",
+          "count": 12
+        },
+        {
+          "actual": "sadness",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "sadness",
+          "predicted": "surprise",
+          "count": 5
+        },
+        {
+          "actual": "anger",
+          "predicted": "neutral",
+          "count": 29
+        },
+        {
+          "actual": "anger",
+          "predicted": "joy",
+          "count": 29
+        },
+        {
+          "actual": "anger",
+          "predicted": "sadness",
+          "count": 6
+        },
+        {
+          "actual": "anger",
+          "predicted": "anger",
+          "count": 65
+        },
+        {
+          "actual": "anger",
+          "predicted": "fear",
+          "count": 3
+        },
+        {
+          "actual": "anger",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "anger",
+          "predicted": "surprise",
+          "count": 19
+        },
+        {
+          "actual": "fear",
+          "predicted": "neutral",
+          "count": 1
+        },
+        {
+          "actual": "fear",
+          "predicted": "joy",
+          "count": 4
+        },
+        {
+          "actual": "fear",
+          "predicted": "sadness",
+          "count": 4
+        },
+        {
+          "actual": "fear",
+          "predicted": "anger",
+          "count": 9
+        },
+        {
+          "actual": "fear",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "fear",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "fear",
+          "predicted": "surprise",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "neutral",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "joy",
+          "count": 0
+        },
+        {
+          "actual": "disgust",
+          "predicted": "sadness",
+          "count": 3
+        },
+        {
+          "actual": "disgust",
+          "predicted": "anger",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "fear",
+          "count": 0
+        },
+        {
+          "actual": "disgust",
+          "predicted": "disgust",
+          "count": 8
+        },
+        {
+          "actual": "disgust",
+          "predicted": "surprise",
+          "count": 3
+        },
+        {
+          "actual": "surprise",
+          "predicted": "neutral",
+          "count": 7
+        },
+        {
+          "actual": "surprise",
+          "predicted": "joy",
+          "count": 15
+        },
+        {
+          "actual": "surprise",
+          "predicted": "sadness",
+          "count": 6
+        },
+        {
+          "actual": "surprise",
+          "predicted": "anger",
+          "count": 10
+        },
+        {
+          "actual": "surprise",
+          "predicted": "fear",
+          "count": 5
+        },
+        {
+          "actual": "surprise",
+          "predicted": "disgust",
+          "count": 0
+        },
+        {
+          "actual": "surprise",
+          "predicted": "surprise",
+          "count": 107
+        }
+      ],
+      "num_samples": 1108
+    },
+    "test_metrics": {
+      "accuracy": 0.6084291187739463,
+      "neutral_precision": 0.8122109158186864,
+      "neutral_recall": 0.6990445859872612,
+      "neutral_f1": 0.7513906718014548,
+      "neutral_support": 1256,
+      "joy_precision": 0.5417515274949084,
+      "joy_recall": 0.6616915422885572,
+      "joy_f1": 0.5957446808510638,
+      "joy_support": 402,
+      "sadness_precision": 0.3438914027149321,
+      "sadness_recall": 0.36538461538461536,
+      "sadness_f1": 0.3543123543123543,
+      "sadness_support": 208,
+      "anger_precision": 0.4981949458483754,
+      "anger_recall": 0.4,
+      "anger_f1": 0.4437299035369775,
+      "anger_support": 345,
+      "fear_precision": 0.1797752808988764,
+      "fear_recall": 0.32,
+      "fear_f1": 0.2302158273381295,
+      "fear_support": 50,
+      "disgust_precision": 0.32608695652173914,
+      "disgust_recall": 0.22058823529411764,
+      "disgust_f1": 0.2631578947368421,
+      "disgust_support": 68,
+      "surprise_precision": 0.49135802469135803,
+      "surprise_recall": 0.708185053380783,
+      "surprise_f1": 0.5801749271137027,
+      "surprise_support": 281,
+      "macro_f1": 0.4598180370986464,
+      "weighted_f1": 0.6139672469846529,
+      "confusion_matrix": [
+        {
+          "actual": "neutral",
+          "predicted": "neutral",
+          "count": 878
+        },
+        {
+          "actual": "neutral",
+          "predicted": "joy",
+          "count": 102
+        },
+        {
+          "actual": "neutral",
+          "predicted": "sadness",
+          "count": 89
+        },
+        {
+          "actual": "neutral",
+          "predicted": "anger",
+          "count": 54
+        },
+        {
+          "actual": "neutral",
+          "predicted": "fear",
+          "count": 31
+        },
+        {
+          "actual": "neutral",
+          "predicted": "disgust",
+          "count": 13
+        },
+        {
+          "actual": "neutral",
+          "predicted": "surprise",
+          "count": 89
+        },
+        {
+          "actual": "joy",
+          "predicted": "neutral",
+          "count": 62
+        },
+        {
+          "actual": "joy",
+          "predicted": "joy",
+          "count": 266
+        },
+        {
+          "actual": "joy",
+          "predicted": "sadness",
+          "count": 10
+        },
+        {
+          "actual": "joy",
+          "predicted": "anger",
+          "count": 28
+        },
+        {
+          "actual": "joy",
+          "predicted": "fear",
+          "count": 6
+        },
+        {
+          "actual": "joy",
+          "predicted": "disgust",
+          "count": 4
+        },
+        {
+          "actual": "joy",
+          "predicted": "surprise",
+          "count": 26
+        },
+        {
+          "actual": "sadness",
+          "predicted": "neutral",
+          "count": 56
+        },
+        {
+          "actual": "sadness",
+          "predicted": "joy",
+          "count": 21
+        },
+        {
+          "actual": "sadness",
+          "predicted": "sadness",
+          "count": 76
+        },
+        {
+          "actual": "sadness",
+          "predicted": "anger",
+          "count": 19
+        },
+        {
+          "actual": "sadness",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "sadness",
+          "predicted": "disgust",
+          "count": 1
+        },
+        {
+          "actual": "sadness",
+          "predicted": "surprise",
+          "count": 19
+        },
+        {
+          "actual": "anger",
+          "predicted": "neutral",
+          "count": 43
+        },
+        {
+          "actual": "anger",
+          "predicted": "joy",
+          "count": 55
+        },
+        {
+          "actual": "anger",
+          "predicted": "sadness",
+          "count": 25
+        },
+        {
+          "actual": "anger",
+          "predicted": "anger",
+          "count": 138
+        },
+        {
+          "actual": "anger",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "anger",
+          "predicted": "disgust",
+          "count": 10
+        },
+        {
+          "actual": "anger",
+          "predicted": "surprise",
+          "count": 58
+        },
+        {
+          "actual": "fear",
+          "predicted": "neutral",
+          "count": 9
+        },
+        {
+          "actual": "fear",
+          "predicted": "joy",
+          "count": 6
+        },
+        {
+          "actual": "fear",
+          "predicted": "sadness",
+          "count": 7
+        },
+        {
+          "actual": "fear",
+          "predicted": "anger",
+          "count": 7
+        },
+        {
+          "actual": "fear",
+          "predicted": "fear",
+          "count": 16
+        },
+        {
+          "actual": "fear",
+          "predicted": "disgust",
+          "count": 1
+        },
+        {
+          "actual": "fear",
+          "predicted": "surprise",
+          "count": 4
+        },
+        {
+          "actual": "disgust",
+          "predicted": "neutral",
+          "count": 18
+        },
+        {
+          "actual": "disgust",
+          "predicted": "joy",
+          "count": 7
+        },
+        {
+          "actual": "disgust",
+          "predicted": "sadness",
+          "count": 5
+        },
+        {
+          "actual": "disgust",
+          "predicted": "anger",
+          "count": 11
+        },
+        {
+          "actual": "disgust",
+          "predicted": "fear",
+          "count": 2
+        },
+        {
+          "actual": "disgust",
+          "predicted": "disgust",
+          "count": 15
+        },
+        {
+          "actual": "disgust",
+          "predicted": "surprise",
+          "count": 10
+        },
+        {
+          "actual": "surprise",
+          "predicted": "neutral",
+          "count": 15
+        },
+        {
+          "actual": "surprise",
+          "predicted": "joy",
+          "count": 34
+        },
+        {
+          "actual": "surprise",
+          "predicted": "sadness",
+          "count": 9
+        },
+        {
+          "actual": "surprise",
+          "predicted": "anger",
+          "count": 20
+        },
+        {
+          "actual": "surprise",
+          "predicted": "fear",
+          "count": 2
+        },
+        {
+          "actual": "surprise",
+          "predicted": "disgust",
+          "count": 2
+        },
+        {
+          "actual": "surprise",
+          "predicted": "surprise",
+          "count": 199
+        }
+      ],
+      "num_samples": 2610
+    }
+  }
+}
